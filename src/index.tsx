@@ -18,6 +18,7 @@ app.get("/time", (c) => {
   c.header("Cache-Control", "no-store");
   return c.json({ now: new Date().toISOString() });
 });
+app.get("/watch", (c) => c.text("I restarted on my own\n"));
 app.notFound((c) => c.json({ error: "Not found", path: c.req.path }, 404));
 
 export default app;

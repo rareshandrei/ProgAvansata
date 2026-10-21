@@ -3,8 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "scripts": {
-    "typecheck": "bun check"
+   "scripts": {
+    "typecheck": "bun check",
+    "dev": "bun --watch src/index.tsx"
   },
   "devDependencies": {
     "@types/bun": "latest"
